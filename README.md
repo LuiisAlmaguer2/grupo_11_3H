@@ -10,7 +10,7 @@ Integrantes:
 
 3.-Luis Daniel Almaguer Rivera: Data Analyst en Chubb. Apasionado del analisis de datos y explorandor de nuevos horizontes. Primerizo con JS HTTP y CSS. Actualmente gusta de jugar videojuegos en el celu  y dormir más de 3 horas.
 
-4.-
+4.-Andrés Sánchez Torres: Está  cargo de  proyectos estrategicos de transformación Claims en Latam. Aprender a programar y entender los conceptos técnicos involucrados facilitarán en buena medida el desarrollo de su trabajo. Le gusta aprender constantemente y le gusta trotar.
 
 5.- 
 
