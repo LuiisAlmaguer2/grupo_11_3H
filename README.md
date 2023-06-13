@@ -12,7 +12,7 @@ Integrantes:
 
 4.-Andrés Sánchez Torres: Está  cargo de  proyectos estrategicos de transformación Claims en Latam. Aprender a programar y entender los conceptos técnicos involucrados facilitarán en buena medida el desarrollo de su trabajo. Le gusta aprender constantemente y le gusta trotar.
 
-5.- 
+5.- Gustavo Joaquin Ramos Bofill: Super enfoncado en el desarrollo de nuevo conocimiento en el Software Development, emocionado de iniciar este nuevo  viaje de con Digital House.
 
 
 
