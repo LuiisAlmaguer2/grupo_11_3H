@@ -8,7 +8,7 @@ Integrantes:
 
 2.- Alejandro Cano: A partir de haber ganado la beca de Chubb con Digital House, encontro una pasion por aprender a programar y cada conocimiento adquirido es un logro. Actualmente trabaja en una empresa de Telecomunicaciones. Le encanta aprender a traves de video y le encanta pasear a su perro Bruno.
 
-3.-Luis Daniel Almaguer Rivera: Data Analyst en Chubb. Apasionado del analisis de datos y explorando nuevos horizontes. Primerizo con JS HTTP y CSS.
+3.-Luis Daniel Almaguer Rivera: Data Analyst en Chubb. Apasionado del analisis de datos y explorandor de nuevos horizontes. Primerizo con JS HTTP y CSS. Actualmente gusta de jugar videojuegos en el celu  y dormir más de 3 horas.
 
 4.-
 
