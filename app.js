@@ -23,6 +23,7 @@ app.get("/register", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/register.html"))
 })
 
+app.use(express.static(path.resolve(__dirname, "./public")))
 
 app.listen(PORT, () => console.log("Escuchando en http://localhost:" + PORT))
 

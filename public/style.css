@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    position: relative;
+    margin: 15px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contact-box {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.field {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 22px;
+    border: 3px solid #e5e7eb;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.field:focus {
+    border: solid orange 3px;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.register {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.upperbtn {
+    width: 49%;
+    border: none;
+    border-bottom: solid #e5e7eb 2.4px;
+    background-color: white;
+    text-transform: uppercase;
+    color: gray;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.upperbtn:focus {
+    font-style: bold;
+    border-bottom: solid black 4px;
+    color: black;
+}
+
+.forgotten {
+    margin-top: 24px;
+    text-decoration: underline;
+}
+
+.last-text {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.check {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-input {
+    width: 370px;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.createButton {
+    margin: 6px 0;
+}
+
+#pullup {
+    width: 100%;
+}
+
+#logo {
+    width: 80px;
+    height: 60px;
+}
+
+#label {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+
+@media (max-width:1024px) {
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+}
