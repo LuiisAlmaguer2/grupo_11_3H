@@ -2,7 +2,7 @@
   "name": "grupo_11_3h",
   "version": "1.0.0",
   "description": "**AZPORT** es una empresa dedicada a la fabricacion y venta de accesorios y vestimenta deportiva. Es una empresa Latinoamerica con sede en 3 diferentes paises como lo son Mexico, Argentina y Colombia.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
