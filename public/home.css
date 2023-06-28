@@ -138,7 +138,7 @@ body {
 
 .descripA {
     display: flex;
-    gap: 50px;
+    gap: 5px;
     width: 100%;
     justify-content: center;
 }
