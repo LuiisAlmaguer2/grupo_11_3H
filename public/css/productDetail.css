@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#derecha_detail {
+    text-align: center;
+}
+
+h2.none {
+    display: none;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.otras-img-container {
+    display: flex;
+    gap: 1em;
+}
+
+.otras-img-container img {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.info-container {
+    flex-basis: 50%;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.precio {
+    color: #f60;
+    font-size: 2em;
+}
+
+.seleccion-talla {
+    margin: 2em 0;
+}
+
+.carrito-buttom-detail {
+    background-color: #f60;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    cursor: pointer;
+}
+
+.carrito-buttom-detail:hover {
+    background-color: #e55d00;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+.otra-desc {
+    margin-bottom: 1em;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.buton_edit, .button_eliminar {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.button_eliminar {
+    background-color: #dc3545;
+}
