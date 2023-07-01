@@ -116,6 +116,7 @@ body {
     justify-content: center;
     margin: 20px;
 }
+
 .card2:hover {
     box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.2);
 }
