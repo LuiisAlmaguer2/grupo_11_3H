@@ -28,3 +28,37 @@ Sitios de inspiración para un e-commerce deportivo:
 
 5.- InnovaSports: https://www.innovasport.com/
 
+
+
+RETROSPECITVA Sprint 2
+
+1.- COMENZAR A HACER
+    - Hacer al menos una reunion semanal de 15 minutos.
+    - Acordar desde el inicio un entregable especifico.
+
+
+2.- HACER MAS
+    - Preguntar más.
+    - Responder más.
+
+
+3.- CONTINUAR HACIENDO
+    - Tener claridad del objetivo de la pagina.
+    - Ofrecer ayuda a los integrantes del equipo.
+    - Adelantar las actividades tanto como se pueda.
+    - Apoyar a los compañeros que tienen dificultades para avanzar.
+
+4.- HACER MENOS
+    - 
+
+
+5.- DEJAR DE HACER
+    - Esperar hasta el último momento para responder o para ponerse al día.
+    - Dejarse atrasar.
+    - Recargar el trabajo en pocos integrantes.
+
+
+
+
+
+
