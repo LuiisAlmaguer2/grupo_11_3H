@@ -144,3 +144,35 @@ body {
 }
 
 /* Empieza footer */
+
+footer {
+    width: 100%;
+}
+.footer {
+    background-color: #C5C5C5;
+    display: flex;
+    text-align: center;
+}
+.footerCol{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.descripF{
+    margin: 7px 0px;
+}
+
+
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Fin footer */
