@@ -165,13 +165,16 @@ footer {
     margin: 7px 0px;
 }
 
-
 .footer2{
+    margin: 5px;
+}
+.footerD{
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
     width: 100%;
+    font-size: 15px;
 }
 
 
