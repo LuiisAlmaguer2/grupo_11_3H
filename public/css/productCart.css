@@ -1,0 +1,292 @@
+/*  Comienta barra navbar */
+.navbarHome {
+    margin-top: 15px;
+    padding: 15px 0;
+    background-color: #C5C5C5;
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+.itemsNav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+}
+
+.searchBar {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    width: 100%;
+}
+
+.inputS {
+    height: 4vh;
+    width: 100%;
+    background-color: #e8e6e6;
+    align-items: left;
+    justify-self: end;
+    text-align: left;
+}
+
+.logoNav {
+    height: 30px;
+    width: 100%;
+    align-items: right;
+    display: flex;
+    justify-content: start;
+    padding-left: 25px;
+}
+
+.btnN {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.formN {
+    display: flex;
+    gap: 2px;
+    padding-right: 25px;
+}
+
+.headerN {
+    background-color: #D9D9D9;
+    height: 500px;
+}
+
+/*  Termina barra navbar */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+ol li,
+ul li {
+    list-style: none;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    margin-bottom: 48px;
+}
+
+.circles::after {
+    content: "";
+    height: .5rem;
+    background-color: lightgray;
+    width: auto;
+    position: absolute;
+    top: 27.5px;
+    left: 2.5rem;
+    right: 2.5rem;
+}
+
+.circulo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.circulo p {
+    border: 4px solid lightgray;
+    display: flex;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+}
+
+.circulo span {
+    padding-top: 40px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+}
+
+.uno p {
+    border: 4px solid black;
+}
+
+.contenedorMedio {
+    padding: 0 16px;
+}
+
+.titleBag {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.itemsMessage {
+    margin-bottom: 24px;
+}
+
+.fa-circle-exclamation {
+    padding-right: 10px;
+}
+
+.summary {
+    height: 260px;
+    background-color: lightgray;
+    margin-bottom: 16px;
+}
+
+.summaryInfo {
+    padding: 16px;
+    text-align: center;
+}
+
+.summaryTitle {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.division {
+    background-color: gray;
+    height: 0.1rem;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.products,
+.discount,
+.subtotal {
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+}
+
+
+.purchaseInfo {
+    display: flex;
+}
+
+.showImg {
+    width: 100px;
+    height: 125px;
+}
+
+.clotheInfo {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.clotheInfo p {
+    font-size: 20px;
+}
+
+.checkoutDivButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.securelyButton {
+    width: 100%;
+    height: 44px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    margin: 24px 0;
+}
+
+.fa-bag-shopping {
+    padding-right: 10px;
+}
+
+.deliveryList {
+    padding: 24px;
+    height: 73px;
+    background-color: lightgray;
+    margin: 24px 0;
+}
+
+.returnPolicy {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.standardDelivery {
+    display: flex;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+@media (min-width:700px) {
+    .circles::after {
+        left: 5.5rem;
+        right: 5.5rem;
+    }
+
+    .infoDeliverySection,
+    .summary {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .infoDeliverySection section,
+    .summaryInfo {
+        width: 340px;
+    }
+
+    .summaryInfo {
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .summary {
+        width: 340px;
+        margin-left: auto;
+    }
+
+    .wholeSummary {
+        position: relative;
+    }
+
+    .wholePurchaseInfo {
+        position: absolute;
+        top: 0;
+    }
+
+    .showImg {
+        width: 124px;
+        height: 155px;
+    }
+
+    .spend,
+    .shipping {
+        display: none;
+    }
+
+    .securelyButton {
+        width: 308px;
+    }
+
+    .checkoutDivButton {
+        justify-content: flex-end;
+        margin-right: 16px;
+        position: absolute;
+        top: 170px;
+        right: 0;
+    }
+}
