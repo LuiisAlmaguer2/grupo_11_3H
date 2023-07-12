@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/productDetail.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title> AZPORT || PAGINA WEB </title>
+</head>
+
+<body>
+    <!-- Empieza navbar -->
+    <%- include("partials/header"); %>
+        <!-- Termina nabvar -->
+
+        <main class="main-container">
+            <section class="content">
+
+                <article class="gallery">
+                    <div class="gallery__image-container">
+                        <img class="gallery__main-image" src="/img/doncic-dallas-frente.jpeg" alt="Imagen principal">
+                    </div>
+                    <div class="gallery__thumnails">
+                        <img id="1" class="gallery__thumnail" src="/img/doncic-dallas-espalda.jpeg" alt="thumnail">
+                        <img id="2" class="gallery__thumnail" src="/img/doncic-dallas-frente.jpeg" alt="thumnail">
+                        <img id="3" class="gallery__thumnail" src="/img/drose-NY-espalda.jpeg" alt="thumnail">
+                        <img id="4" class="gallery__thumnail" src="/img/drose-NY-frente.jpeg" alt="thumnail">
+                    </div>
+                </article>
+
+                <article class="details">
+
+                    <h2 class="details__marca">Tienda AZPORT</h2>
+                    <h2 class="details__titulo">Calza reversible estampa Flores Uva</h2>
+                    <p class="details__description">Descubre las prendas reversibles de alta compresión de Azport:
+                        cómodas,
+                        sin
+                        rozaduras y cero transparencia. Combina diseños exclusivos y colores lisos con flexibilidad para
+                        tus
+                        actividades diarias y deportivas. Nuestra calza reversible tiene un ajuste flexible, cintura
+                        elástica y
+                        detalles de recortes para mayor comodidad. ¡Elige tu estilo preferido y luce a la moda con
+                        confianza!
+                    </p>
+
+                    <div class="details__prices">
+                        <p class="details__now">$2000.00 <span class="details__discount">50%</span></p>
+                        <p class="details__before">$2500.00</p>
+                    </div>
+
+                    <div class="size-selector">
+                        <h3>Selecciona tu talle:</h3>
+                        <ul class="size-options">
+                            <li class="size-option">S</li>
+                            <li class="size-option">M</li>
+                            <li class="size-option">L</li>
+                            <li class="size-option">XL</li>
+                            <li class="size-option">XXL</li>
+                        </ul>
+                    </div>
+
+                    <div class="details_product-quantity">
+                        <div class="input">
+                            <img class="input__menos" src="/img/menos.png" alt="icono menos">
+                            <input class="input__number" type="number" value="0">
+                            <img class="input__mas" src="/img/suma.png" alt="icono suma">
+                        </div>
+                    </div>
+                    <button class="details_button">Agregar al carrito</button>
+                    </div>
+
+                </article>
+
+            </section>
+        </main>
+
+        <%- include("partials/footer"); %>
+            </div>
+</body>
+
+</html>

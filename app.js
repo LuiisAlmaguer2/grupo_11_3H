@@ -3,27 +3,13 @@ const app = express();
 const path = require("path");
 const PORT = 3030;
 
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/index.html"))
-})
+const mainRoutes = require("./routes/mainRoutes");
 
-app.get("/login", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/login.html"))
-})
+app.use(express.static(path.resolve(__dirname, "./public")));
 
-app.get("/productCart", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
-})
+app.set("view engine", "ejs");
 
-app.get("/productDetail", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productDetail.html"))
-})
-
-app.get("/register", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/register.html"))
-})
-
-app.use(express.static(path.resolve(__dirname, "./public")))
+app.use("/", mainRoutes);
 
 app.listen(PORT, () => console.log("Escuchando en http://localhost:" + PORT))
 

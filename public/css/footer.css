@@ -1,0 +1,96 @@
+/* Empieza footer */
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #C5C5C5;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCol {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.descripF {
+    margin: 7px 0px;
+}
+
+.descripF p {
+    display: none;
+}
+
+.socialMedias p {
+    display: block;
+}
+
+.socialMedias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer2 {
+    margin: 5px;
+}
+
+.footerD {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    flex-direction: column-reverse;
+}
+
+.policyTermFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: lightgray 1px solid;
+    padding-bottom: 20px;
+}
+
+.rightsInformationFooter {
+    padding: 15px 40px;
+}
+
+
+/* Fin footer */
+
+@media (min-width:780px) {
+    .footerD {
+        flex-direction: row;
+
+    }
+
+    .policyTermFooter {
+        flex-direction: row;
+        justify-content: end;
+        border-bottom: none;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .footer {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .descripF p {
+        display: block;
+    }
+
+}

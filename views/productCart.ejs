@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/productCart.css" />
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Browser</title>
+</head>
+
+<body>
+
+
+    <!-- Empieza navbar -->
+
+    <%- include("partials/header"); %>
+
+        <!-- Termina nabvar -->
+
+        <div class="containerSuperior">
+            <ol class="circles">
+                <li class="circulo uno">
+                    <p>1</p><span>your bag</span>
+                </li>
+                <li class="circulo dos">
+                    <p>2</p><span>information</span>
+                </li>
+                <li class="circulo tres">
+                    <p>3</p><span>shipping</span>
+                </li>
+                <li class="circulo cuatro">
+                    <p>4</p><span>payment</span>
+                </li>
+                <li class="circulo cinco">
+                    <p>5</p><span>complete</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="contenedorMedio">
+            <div class="title">
+                <h1 class="titleBag">your bag</h1>
+            </div>
+
+            <div class="itemsMessage">
+                <p><i class="fa-solid fa-circle-exclamation"></i><b>Your items aren't reserved,</b> checkout quickly to
+                    make
+                    sure you don't miss out.</p>
+            </div>
+
+            <div class="wholeSummary">
+                <div class="summary">
+                    <div class="summaryInfo">
+                        <h4 class="summaryTitle">Summary</h4>
+                        <p class="spend">Spend $75 or over for</p>
+                        <p class="shipping"><b>Free Standard Shipping</b></p>
+                        <div class="division"></div>
+                        <div class="products">
+                            <p class="firstP">1 product(s)</p>
+                            <p class="secondP">$45</p>
+                        </div>
+                        <div class="discount">
+                            <p class="firstP">Discount</p>
+                            <p class="secondP">-$31.50</p>
+                        </div>
+                        <div class="subtotal">
+                            <p class="firstP"><b>Sub Total</b></p>
+                            <p class="secondP"><b>$13.50</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wholePurchaseInfo">
+                    <article class="purchaseInfo">
+                        <div>
+                            <a href="">
+                                <img src="/img/PlayeraEspalda.jpg" alt="" class="showImg">
+                            </a>
+                        </div>
+                        <div class="clotheInfo">
+                            <p>Crest T-Shirt</p>
+                            <p>Regular Fit</p>
+                            <p>Green | XS</p>
+                            <p>US$22.50</p>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="checkoutDivButton">
+                    <button class="securelyButton"><i class="fa-solid fa-bag-shopping"></i>checkout securely</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="infoDeliverySection">
+                <section>
+                    <h5>Delivered to your door</h5>
+                    <ul class="deliveryList">
+                        <li class="returnPolicy">
+                            <span class="icon"><i class="fa-solid fa-rotate-left"></i></span>
+                            <p>Free 30-Day Return Policy!</p>
+                        </li>
+                        <li class="standardDelivery">
+                            <span class="icon"><i class="fa-solid fa-box"></i></span>
+                            <p>Free Standard Delivery over $150</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <%- include("partials/footer"); %>
+</body>
+
+</html>
