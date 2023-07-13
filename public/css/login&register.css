@@ -139,6 +139,7 @@ p {
 
 #pullup {
     width: 100%;
+    object-fit: cover;
 }
 
 #logo {
