@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/edit-product/<%= product._id %>" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Nombre del producto" value="<%= product.name %>" required>
+        <textarea name="description" placeholder="Descripción" required><%= product.description %></textarea>
+        <input type="file" name="image" accept="image/*">
+        <img src="<%= product.image %>" alt="Imagen actual del producto" width="100">
+        <input type="text" name="category" placeholder="Categoría" value="<%= product.category %>" required>
+        <input type="text" name="colors" placeholder="Colores" value="<%= product.colors %>" required>
+        <input type="number" name="price" placeholder="Precio" value="<%= product.price %>" required>
+        <button type="submit">Editar producto</button>
+    </form>
+</body>
+
+</html>
