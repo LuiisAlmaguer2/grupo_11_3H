@@ -1,0 +1,19 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin-top: 150px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table,
+th,
+tr,
+td {
+    border: 2px solid black;
+}
