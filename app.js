@@ -18,7 +18,7 @@ app.use(methodOverride('_method'));
 
 app.use("/", mainRoutes);
 app.use("/auth", authRoutes);
-app.use("/product", productRoutes);
+app.use("/products", productRoutes);
 app.use("/admin", adminRoutes);
 
 app.listen(PORT, () => console.log("Escuchando en http://localhost:" + PORT))

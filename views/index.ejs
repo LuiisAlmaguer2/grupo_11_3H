@@ -45,7 +45,28 @@
 
             <div class="cards">
 
-                <article>
+
+                <% for(let i=productos.length - 4; i < productos.length; i++) { %>
+
+                    <article>
+                        <div class="card">
+                            <img src="/img/<%= productos[i].imagen %>" alt="TopRosa" class="imgCard">
+                            <p class="descripcionCard"><b>
+                                    <%= productos[i].nombre %>
+                                </b></p>
+                            <p class="colorItem">
+                                <%= productos[i].color %>
+                            </p>
+                            <p class="priceItem">
+                                $<%= productos[i].precio %>
+                            </p>
+                        </div>
+                    </article>
+
+                    <% } %>
+
+
+                        <!-- <article>
                     <div class="card">
                         <img src="/img/topRosa.jpg" alt="TopRosa" class="imgCard">
                         <p class="descripcionCard"><b>Seamless Training Top</b></p>
@@ -79,7 +100,7 @@
                         <p class="colorItem">Pink</p>
                         <p class="priceItem">$40</p>
                     </div>
-                </article>
+                </article> -->
 
             </div>
 

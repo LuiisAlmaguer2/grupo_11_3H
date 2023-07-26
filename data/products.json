@@ -1,38 +1,39 @@
 [
-    {
-        "id": 1,
-        "nombre": "Seamless Training Top",
-        "descripcion": "",
-        "imagen": "topRosa.jpg",
-        "categoria": "Mujer",
-        "color": "Pink",
-        "precio": "40"
-    },
-    {
-        "id": 2,
-        "nombre": "Seamless Long Sleeve Crop Top",
-        "descripcion": "",
-        "imagen": "cropTopAzul.jpg",
-        "categoria": "Mujer",
-        "color": "LightBlue",
-        "precio": "40"
-    },
-    {
-        "id": 3,
-        "nombre": "Seamless Vital 2.0 Legging",
-        "descripcion": "",
-        "imagen": "leggingNegro.jpg",
-        "categoria": "Mujer",
-        "color": "Black",
-        "precio": "40"
-    },
-    {
-        "id": 4,
-        "nombre": "Seamless Long Sleeve Crop Top",
-        "descripcion": "",
-        "imagen": "cropTopRosa.jpg",
-        "categoria": "Mujer",
-        "color": "Pink",
-        "precio": "40"
-    }
+  {
+    "nombre": "Seamless Training Top",
+    "descripcion": "",
+    "oldImagen": "",
+    "categoria": "Men",
+    "color": "Pink",
+    "precio": "40",
+    "id": 1,
+    "imagen": "product-1690333458282.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Seamless Long Sleeve Crop Top",
+    "descripcion": "",
+    "imagen": "cropTopAzul.jpg",
+    "categoria": "Women",
+    "color": "LightBlue",
+    "precio": "40"
+  },
+  {
+    "id": 3,
+    "nombre": "Seamless Vital 2.0 Legging",
+    "descripcion": "",
+    "imagen": "leggingNegro.jpg",
+    "categoria": "Women",
+    "color": "Black",
+    "precio": "40"
+  },
+  {
+    "id": 4,
+    "nombre": "Seamless Long Sleeve Crop Top",
+    "descripcion": "",
+    "imagen": "cropTopRosa.jpg",
+    "categoria": "Women",
+    "color": "Pink",
+    "precio": "40"
+  }
 ]

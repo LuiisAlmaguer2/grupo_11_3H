@@ -7,6 +7,8 @@ router.get("/cart", mainController.productCart)
 
 router.get("/detail", mainController.productDetail)
 
+router.get("/", mainController.showWomen)
+
 
 
 module.exports = router;

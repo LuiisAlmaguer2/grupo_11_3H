@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/home.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Inter:wght@300&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title> AZPORT || PAGINA WEB </title>
+</head>
+
+<body>
+    <!-- Empieza navbar -->
+
+    <%- include("partials/header"); %>
+
+        <!-- Termina nabvar -->
+
+        <div class="cards">
+
+
+            <% for(let i=0 ; i < productosFilter.length; i++) { %>
+
+                <article>
+                    <div class="card">
+                        <img src="/img/<%= productosFilter[i].imagen %>" alt="TopRosa" class="imgCard">
+                        <p class="descripcionCard"><b>
+                                <%= productosFilter[i].nombre %>
+                            </b></p>
+                        <p class="colorItem">
+                            <%= productosFilter[i].color %>
+                        </p>
+                        <p class="priceItem">
+                            $<%= productosFilter[i].precio %>
+                        </p>
+                    </div>
+                </article>
+
+                <% } %>

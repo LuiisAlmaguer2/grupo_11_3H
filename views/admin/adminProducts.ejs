@@ -53,7 +53,13 @@
                                 </td>
                                 <td><a href="/admin/detail/<%= producto.id %>">Ver</ion-icon></a></td>
                                 <td><a href="/admin/edit/<%= producto.id %>">Editar</ion-icon></a></td>
-                                <td><a href="/admin/delete/<%= producto.id %>">Eliminar</ion-icon></a></td>
+
+                                <td>
+                                    <form action="/admin/<%= producto.id %>?_method=DELETE" method="post"><button
+                                            type="submit">Eliminar</button></form>
+                                </td>
+
+                                <!-- <td><a href="/admin/delete/<%= producto.id %>">Eliminar</ion-icon></a></td> -->
                                 <% }) %>
                             </tr>
                     </tbody>

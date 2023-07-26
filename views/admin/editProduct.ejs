@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/adminProducts.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Inter:wght@300&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>List Of Products</title>
+</head>
+
+<body>
+
+
+
+    <div>
+        <form action="/admin/edit/<%=productoAEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div>
+                <input type="text" name="nombre" placeholder="Coloca nombre del producto" required
+                    value="<%=productoAEditar.nombre %>">
+            </div>
+            <div>
+                <input type="text" name="descripcion" placeholder="Coloca la descripcion del producto"
+                    value="<%=productoAEditar.descripcion %>">
+            </div>
+            <div>
+                <img src="/img/<%=productoAEditar.imagen %>" alt="">
+                <input type="hidden" name="oldImagen" value="<%=productoAEditar.imagen %>">
+                <input type="file" name="imagen">
+            </div>
+            <div>
+                <select name="categoria">
+                    <option value="Women" <%=productoAEditar.categoria==="Women" ? "selected" : null %>>Women</option>
+                    <option value="Men" <%=productoAEditar.categoria==="Men" ? "selected" : null %>>Men</option>
+                </select>
+                <!-- <input type="text" name="categoria" placeholder="Coloca la categoria del producto"> -->
+            </div>
+            <div>
+                <input type="text" name="color" placeholder="Coloca el color del producto"
+                    value="<%=productoAEditar.color %>">
+            </div>
+            <div>
+                <input type="text" name="precio" placeholder="Coloca el precio del producto"
+                    value="<%=productoAEditar.precio %>">
+            </div>
+            <div>
+                <button type="submit">Actualizar</button>
+                <a href="/admin">Volver</a>
+            </div>
+        </form>
+    </div>
+
+
+</body>
