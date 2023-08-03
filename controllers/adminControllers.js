@@ -14,19 +14,33 @@ const controller = {
     },
     save: (req, res) => {
         let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        let nuevoProducto;
 
-        let ultimoProducto = productos.pop();
-        productos.push(ultimoProducto);
+        if (productos.length === 0) {
+            nuevoProducto = {
+                id: 1,
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                imagen: req.file.filename,
+                categoria: req.body.categoria,
+                color: req.body.color,
+                precio: req.body.precio
+            }
+        } else {
+            let ultimoProducto = productos.pop();
+            productos.push(ultimoProducto);
 
-        let nuevoProducto = {
-            id: ultimoProducto.id + 1,
-            nombre: req.body.nombre,
-            descripcion: req.body.descripcion,
-            imagen: req.file.filename,
-            categoria: req.body.categoria,
-            color: req.body.color,
-            precio: req.body.precio
+            nuevoProducto = {
+                id: ultimoProducto.id + 1,
+                nombre: req.body.nombre,
+                descripcion: req.body.descripcion,
+                imagen: req.file.filename,
+                categoria: req.body.categoria,
+                color: req.body.color,
+                precio: req.body.precio
+            }
         }
+
 
         productos.push(nuevoProducto);
 
@@ -47,7 +61,7 @@ const controller = {
             }
         });
 
-        res.render("./admin/detailProduct", { elProducto })
+        res.render("productDetail", { elProducto })
 
     },
 
@@ -63,7 +77,19 @@ const controller = {
     update: (req, res) => {
         let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
         req.body.id = parseInt(req.params.id)
-        req.body.imagen = req.file ? req.file.filename : req.body.oldImage;
+        let productoEditado = productos.find(producto => producto.id === req.body.id);
+        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen;
+
+        // if (req.body.oldImagen) {
+        //     console.log(req.body.oldImagen)
+        //     if ((req.body.imagen !== req.body.oldImagen) && (req.body.oldImagen !== "")) {
+        //         fs.unlinkSync(path.resolve(__dirname, "../public/img/" + productoEditado.oldImagen))
+        //     }
+
+        //     // if (req.body.imagen === req.body.oldImagen) {
+        //     //     req.body.oldImagen = ""
+        //     // }
+        // }
 
         let productoUpdate = productos.map(producto => {
             if (producto.id === req.body.id) {

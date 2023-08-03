@@ -29,21 +29,21 @@
         <div class="cards">
 
 
-            <% for(let i=0 ; i < productosFilter.length; i++) { %>
+            <% for(let i=0 ; i < finalProductos.length; i++) { %>
 
                 <article>
                     <div class="card">
-                        <a href="/products/detail/<%=productosFilter[i].id%>">
-                            <img src="/img/<%= productosFilter[i].imagen %>" alt="TopRosa" class="imgCard">
+                        <a href="/products/detail/<%=finalProductos[i].id%>">
+                            <img src="/img/<%= finalProductos[i].imagen %>" alt="TopRosa" class="imgCard">
                             <div>
                                 <p class="descripcionCard"><b>
-                                        <%= productosFilter[i].nombre %>
+                                        <%= finalProductos[i].nombre %>
                                     </b></p>
                                 <p class="colorItem">
-                                    <%= productosFilter[i].color %>
+                                    <%= finalProductos[i].color %>
                                 </p>
                                 <p class="priceItem">
-                                    $<%= productosFilter[i].precio %>
+                                    $<%= finalProductos[i].precio %>
                                 </p>
                             </div>
 
@@ -59,4 +59,3 @@
 
 <!-- Empieza el footer :) -->
 <%- include("partials/footer"); %>
-    <!-- Termina el footer <3 -->

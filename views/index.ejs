@@ -26,9 +26,9 @@
 
         <!-- Termina nabvar -->
 
-        <div>
+        <div class="headerHeaderN">
             <div class="headerN">
-
+                <img src="/img/banner.jpg" alt="">
             </div>
         </div>
         <!-- Empiezan las cards -->
@@ -46,20 +46,23 @@
             <div class="cards">
 
 
-                <% for(let i=productos.length - 4; i < productos.length; i++) { %>
+                <% for(let i=0; i < productos.length && i < 4; i++) { %>
 
                     <article>
                         <div class="card">
-                            <img src="/img/<%= productos[i].imagen %>" alt="TopRosa" class="imgCard">
-                            <p class="descripcionCard"><b>
-                                    <%= productos[i].nombre %>
-                                </b></p>
-                            <p class="colorItem">
-                                <%= productos[i].color %>
-                            </p>
-                            <p class="priceItem">
-                                $<%= productos[i].precio %>
-                            </p>
+                            <a href="/products/detail/<%=productos[i].id%>">
+                                <img src="/img/<%= productos[i].imagen %>" alt="TopRosa" class="imgCard">
+                                <p class="descripcionCard"><b>
+                                        <%= productos[i].nombre %>
+                                    </b></p>
+                                <p class="colorItem">
+                                    <%= productos[i].color %>
+                                </p>
+                                <p class="priceItem">
+                                    $<%= productos[i].precio %>
+                                </p>
+                            </a>
+
                         </div>
                     </article>
 
@@ -108,25 +111,34 @@
             <p class="titleCards"> <b> SHOP </b></p>
             <div class="cards shopCards">
                 <div class="card2">
-                    <img src="../img/showWomen.jpg" alt="shopWomen" class="imgCard2">
-                    <div class="descripA">
-                        <p class="descripcionCard2"><b>SHOP WOMEN </b> </p>
-                        <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
-                    </div>
+                    <a href="/products?category=Women">
+                        <img src="../img/showWomen.jpg" alt="shopWomen" class="imgCard2">
+                        <div class="descripA">
+                            <p class="descripcionCard2"><b>SHOP WOMEN </b> </p>
+                            <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card2">
+                    <a href="/products?category=Men">
+                        <img src="/img/showMen.jpg" alt="shopMen" class="imgCard2">
+                        <div class="descripA">
+                            <p class="descripcionCard2"><b> SHOP MEN </b></p>
+                            <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
+                        </div>
+                    </a>
+
                 </div>
                 <div class="card2">
-                    <img src="/img/showMen.jpg" alt="shopMen" class="imgCard2">
-                    <div class="descripA">
-                        <p class="descripcionCard2"><b> SHOP MEN </b></p>
-                        <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
-                    </div>
-                </div>
-                <div class="card2">
-                    <img src="/img/showAcc.jpg" alt="ShopAccs" class="imgCard2">
-                    <div class="descripA">
-                        <p class="descripcionCard2"><b> SHOP ACCESORIES</b></p>
-                        <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
-                    </div>
+                    <a href="/products?category=Accesories">
+                        <img src="/img/showAcc.jpg" alt="ShopAccs" class="imgCard2">
+                        <div class="descripA">
+                            <p class="descripcionCard2"><b> SHOP ACCESORIES</b></p>
+                            <p class="btnA"><i class="fas fa-arrow-right" style="color: #0c0d0d;"></i></p>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>

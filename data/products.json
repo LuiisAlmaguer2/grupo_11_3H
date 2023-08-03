@@ -1,39 +1,61 @@
 [
   {
     "nombre": "Seamless Training Top",
-    "descripcion": "",
-    "oldImagen": "",
-    "categoria": "Men",
+    "descripcion": "Top color rosa",
+    "oldImagen": "product-1690943338535.jpg",
+    "categoria": "Women",
     "color": "Pink",
-    "precio": "40",
+    "precio": "45",
     "id": 1,
-    "imagen": "product-1690333458282.jpg"
+    "imagen": "product-1690943854495.jpg"
   },
   {
-    "id": 2,
-    "nombre": "Seamless Long Sleeve Crop Top",
-    "descripcion": "",
-    "imagen": "cropTopAzul.jpg",
+    "nombre": "Seamless Training Crop Top",
+    "descripcion": "Crop Top Azul",
+    "oldImagen": "",
     "categoria": "Women",
     "color": "LightBlue",
-    "precio": "40"
+    "precio": "25",
+    "id": 2,
+    "imagen": "product-1690943862661.jpg"
   },
   {
-    "id": 3,
     "nombre": "Seamless Vital 2.0 Legging",
-    "descripcion": "",
-    "imagen": "leggingNegro.jpg",
+    "descripcion": "Legging Negro",
+    "oldImagen": "product-1690404135442.jpg",
     "categoria": "Women",
     "color": "Black",
-    "precio": "40"
+    "precio": "20",
+    "id": 3,
+    "imagen": "product-1691023233401.jpg"
   },
   {
-    "id": 4,
     "nombre": "Seamless Long Sleeve Crop Top",
-    "descripcion": "",
-    "imagen": "cropTopRosa.jpg",
+    "descripcion": "Crop Top Rosa",
+    "oldImagen": "product-1690404306265.jpg",
     "categoria": "Women",
     "color": "Pink",
+    "precio": "25",
+    "id": 4,
+    "imagen": "product-1691023245658.jpg"
+  },
+  {
+    "nombre": "Seamless Training Top",
+    "descripcion": "Top color rosa",
+    "oldImagen": "product-1690404338073.jpg",
+    "categoria": "Women",
+    "color": "Pink",
+    "precio": "20",
+    "id": 5,
+    "imagen": "product-1691023255646.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Sport T-Shirt",
+    "descripcion": "Playera",
+    "imagen": "product-1691023504965.jpg",
+    "categoria": "Men",
+    "color": "Green Army",
     "precio": "40"
   }
 ]

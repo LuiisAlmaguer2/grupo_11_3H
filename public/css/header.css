@@ -81,6 +81,11 @@ i {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*  Termina barra navbar */
 
 @media (min-width: 468px) {

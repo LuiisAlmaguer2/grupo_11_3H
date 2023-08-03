@@ -5,14 +5,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.headerN {
-    background-color: #D9D9D9;
-    height: 500px;
-    width: 100%;
-
+.headerHeaderN {
+    margin-top: 70px;
 }
 
-body {}
+.headerN {
+    background-color: #D9D9D9;
+    height: 620px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.headerN img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* Empieza el body con cards */
 
@@ -103,6 +112,11 @@ body {}
 
 article {
     margin: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 

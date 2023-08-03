@@ -13,12 +13,15 @@
 /* Empieza el body con cards */
 
 /* Additions */
-.content {
+.content:first-of-type {
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
     margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .details,
 .descriptionInfo,
@@ -28,9 +31,15 @@
 }
 
 
-.gallery__image-container img {
+.gallery__image-container {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__main-image {
+    width: 70%
 }
 
 .gallery__thumnails {
@@ -134,19 +143,29 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 @media (min-width: 768px) {
 
     .gallery,
     .details {
-        width: 45%;
+        /* width: 45%; */
+        width: 80%;
     }
+
+    .main-container {
+        display: flex;
+        margin: 0 10%;
+    }
+
+    .content {
+        margin-top: 70px;
+    }
+
+    .gallery__main-image {
+        padding: 10%
+    }
+
+    .descripSection {
+        margin: 0 10%;
+    }
+
 }
