@@ -1,13 +1,12 @@
 [
   {
+    "id": 1,
     "nombre": "Seamless Training Top",
     "descripcion": "Top color rosa",
-    "oldImagen": "product-1690943338535.jpg",
+    "imagen": "product-1691025921143.jpg",
     "categoria": "Women",
     "color": "Pink",
-    "precio": "45",
-    "id": 1,
-    "imagen": "product-1690943854495.jpg"
+    "precio": "45"
   },
   {
     "nombre": "Seamless Training Crop Top",
@@ -53,7 +52,7 @@
     "id": 6,
     "nombre": "Sport T-Shirt",
     "descripcion": "Playera",
-    "imagen": "product-1691023504965.jpg",
+    "imagen": "product-1691033911790.jpg",
     "categoria": "Men",
     "color": "Green Army",
     "precio": "40"

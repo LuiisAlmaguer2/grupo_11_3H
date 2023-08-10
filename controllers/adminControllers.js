@@ -75,10 +75,18 @@ const controller = {
     },
 
     update: (req, res) => {
+        let img;
         let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
-        req.body.id = parseInt(req.params.id)
-        let productoEditado = productos.find(producto => producto.id === req.body.id);
-        req.body.imagen = req.file ? req.file.filename : req.body.oldImagen;
+        const id = parseInt(req.params.id)
+        let productoEditado = productos.find(producto => producto.id === id);
+        //const imagen = req.file ? req.file.filename : req.body.oldImagen;
+
+        if (req.file && req.file.filename) {
+            img = req.file.filename
+            fs.unlinkSync(path.resolve(__dirname, "../public/img/" + productoEditado.imagen))
+        } else {
+            img = productoEditado.imagen;
+        }
 
         // if (req.body.oldImagen) {
         //     console.log(req.body.oldImagen)
@@ -92,8 +100,16 @@ const controller = {
         // }
 
         let productoUpdate = productos.map(producto => {
-            if (producto.id === req.body.id) {
-                return producto = req.body
+            if (producto.id === id) {
+                return ({
+                    id: id,
+                    nombre: req.body.nombre,
+                    descripcion: req.body.descripcion,
+                    imagen: img,
+                    categoria: req.body.categoria,
+                    color: req.body.color,
+                    precio: req.body.precio
+                })
             }
             return producto;
         })

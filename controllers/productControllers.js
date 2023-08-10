@@ -22,8 +22,16 @@ const controller = {
 
     showCategory: (req, res) => {
         let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        let productosFilter;
 
-        let productosFilter = productos.filter(producto => producto.categoria === req.query.category);
+        if (req.query.category === undefined) {
+            productosFilter = productos
+
+        } else {
+            productosFilter = productos.filter(producto => producto.categoria === req.query.category);
+        }
+
+        console.log(req.query)
 
         res.render("products", { productosFilter })
     },
@@ -32,8 +40,6 @@ const controller = {
         let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
 
         let finalProductos = productos.filter(producto => producto.nombre.toUpperCase().includes(req.query.search.toUpperCase()));
-
-        //console.log(req.query.search.toUpperCase())
 
         res.render("productsSearch", { finalProductos })
     }
