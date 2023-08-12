@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "aaaaaaaaaaaaaa",
+    "nombre": "Alejandro",
+    "apellido": "Cano Sanchez"
+  },
+  {
+    "id": 2,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "aa",
+    "nombre": "Alejandro",
+    "apellido": "Cano Sanchez"
+  }
+]

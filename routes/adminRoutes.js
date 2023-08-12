@@ -23,4 +23,5 @@ router.get("/edit/:id", controllersAdmin.edit)
 router.put("/edit/:id", upload.single('imagen'), controllersAdmin.update)
 router.delete("/:id", controllersAdmin.delete);
 
+
 module.exports = router;

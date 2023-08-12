@@ -56,5 +56,14 @@
     "categoria": "Men",
     "color": "Green Army",
     "precio": "40"
+  },
+  {
+    "id": 7,
+    "nombre": "Seamless Training Crop Top",
+    "descripcion": "Top color rosa",
+    "imagen": "product-1691854199841.jpg",
+    "categoria": "Women",
+    "color": "Pink",
+    "precio": "20"
   }
 ]
