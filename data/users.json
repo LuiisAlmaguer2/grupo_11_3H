@@ -1,16 +1,233 @@
 [
   {
     "id": 1,
-    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
-    "password": "aaaaaaaaaaaaaa",
+    "email": "cano_alejandro97@hotmail.com",
+    "password": "$2a$10$2GZY/U/DgoZK0mhfgz6oNe1.m.Dy57CjUd/fyLJDucdi9lwPt27eO",
     "nombre": "Alejandro",
-    "apellido": "Cano Sanchez"
+    "apellido": "Cano"
   },
   {
     "id": 2,
-    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
-    "password": "aa",
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$MFKLexwNmPFKNZ3yyPdrZuIbWSPKdNARYyESLmLyop73cZrNCiZlW",
     "nombre": "Alejandro",
-    "apellido": "Cano Sanchez"
+    "apellido": "Cano"
+  },
+  {
+    "id": 3,
+    "email": "canoalex@gmail.com",
+    "password": "$2a$10$GKFBbBEWL8Y7IqWbXmltwu9KZ6k0CzPs.t1a9LfGsHrVWuwU1JQtW",
+    "nombre": "Alejandro",
+    "apellido": "Cano"
+  },
+  {
+    "id": 4,
+    "email": "aa@gmail.com",
+    "password": "$2a$10$0zzS2BTgBBpfnwCjma9xuuGfy2520lI4K0GJuZr/N7SmAi3Vx7NPq",
+    "nombre": "Alejandro",
+    "apellido": "aaa"
+  },
+  {
+    "id": 5,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$jc1YoG.YMK2nbZFVa8x03e4wd08juMDs5XVAZWOTvYcvtAGSH3sxG",
+    "nombre": "Andres",
+    "apellido": "a"
+  },
+  {
+    "id": 6,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$X//ROgRu09VRin7crlYGHOrnKRLqrV0LRsyCccyyPJ/P.RjZoZrPG",
+    "nombre": "Gerardo",
+    "apellido": "a"
+  },
+  {
+    "id": 7,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$lvlTNxgM.DqRCCm5Xh9HbuewNc2ZGHl/N5bK0kNCBZtqIMJu/2b6a",
+    "nombre": "Andres",
+    "apellido": "Trevino"
+  },
+  {
+    "id": 8,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$Ohe1jOptKk8tuQ69RNjcTObxPs1dpFuW.2RTacNz4Wqi0Hwy3RrLW",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 9,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$iX8YkUFmu1hnmTSllYXr.uIcPyJZZ/UkkarI46rXYKlcsltcRtpk2",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 10,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$WILvag86cdZEAB5og2g9pObm21AwcnKVuqbPD8oSBdjAjhaZ0Owku",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 11,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$745rQ3BRSeO2qLUbTQlVj.FRdmuUFyj4ATrupuIA5AYnJGX.kzxWO",
+    "nombre": "Andres",
+    "apellido": "a"
+  },
+  {
+    "id": 12,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$i5HZJnd8.axQzCooNoAuLezhXeh9R.vgWPQ52HMtlXRyTOjuQRjK.",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 13,
+    "email": "a@gmail.com",
+    "password": "$2a$10$uaAemplPlYj574Rf6BgVfubaYmh4uGnQg1Xl7UqWPLgIVDMPQhK0u",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 14,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$B9VDCCgtQPyJfYKXlnPsCeJ2DnlCJsK2rVtyDVFW8ECQ1pFiuxNOC",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 15,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$7B468mkLKno/e6Mw1e7nCOQUHGlA8TY/o8DWv7XzJluJUDSOXMx6O",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 16,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$OMs5Q.5uXsiL2HSJNEmTne/r2RHhNv0LTEnWQovvSckdy7tRMDMrW",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 17,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$YOupkWURjifHkLkNx/0jUOLlYp35XJD/.BYeEUFkwZlsnyBS9qt1y",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 18,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$egvmAQixXVMPSB.ye2qaD.8BjPQHKlwA771HPtQNTDFWpt60P0lzW",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 19,
+    "email": "andres@hotmail.com",
+    "password": "$2a$10$0WpQg/r7oc8D5QGEa3E6xuzoDVb1m.JRsaaTdaj04AZkqP6tGtK9y",
+    "nombre": "Andres",
+    "apellido": "Cano"
+  },
+  {
+    "id": 20,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$Zo4LvIzAWABzHLiBhAsXWOAlOLOAoaGDvj1SFPw6B6/oZUJ.rAns.",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 21,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$AMzzLMI7/PYBZxwRx8Zmp.2CERy6w2PedlGIGhpOzVwkVN81.DfaK",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 22,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$b0Q5oZ.2zwOsd92PP/bWDOK3I7.jkBt2.M/4oxpaUxtrdLFtSre9O",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 23,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$i3iNQQk4wtspu1MuOCqZNeYauxGyRBDguGD4CbW8dQwwVC9tdF1Hq",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 24,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$YiQQXS3okw5g8whOcGJfIuKyLkdokGHtnPlvXvzpesUFIcViDjxym",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 25,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$495me9m4VEVHrAHdulVWtOygUMXko6So8ud2waxXN8bdD1DMJEphW",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 26,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$iVbfRxU7WMu9gHlQLe5ei.0bOBo1m1rg5NVMsI8i/befvfc7oXRCu",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 27,
+    "email": "alejandrocano@gmail.com",
+    "password": "$2a$10$XVpceuyTKPmYO91Slc.dUO9lbZwOivAOZng8nIq8IRJ8LLSuhO6Bm",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 28,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$0TJbgEzUBIHLZY9tvH4Yy.RR.wkGuq0lr57DmTTLnj78h8sq8bIRa",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 29,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$ZAz4gX8U.Trwxpjcpx6uaO0tMgOpn9G5yvq5ZesIFmp/1IuSU0Yv.",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 30,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$/81sWhKnYl3CTkBSpEgvreAKczwrUk2j/X7/nL.jbkyvfBm/lMeQ2",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 31,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$IaExL7vUMfYvgjMW/LaMquJgKrqQ7PA.1XkWMcqUlqAGEyCsyyXwu",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 32,
+    "email": "CANO_ALEJANDRO97@HOTMAIL.COM",
+    "password": "$2a$10$UbW52HG2tRHINjj744woeu8uHZ9OIuylbOJ78iJO2z9MQkT2rw66K",
+    "nombre": "a",
+    "apellido": "a"
+  },
+  {
+    "id": 33,
+    "email": "andres@gmail.com",
+    "password": "$2a$10$BIKt586mohfM5GGbbquVVebKBw77B1laUPwB5paovwpOtW8GVc/xK",
+    "nombre": "aaa",
+    "apellido": "a"
   }
 ]

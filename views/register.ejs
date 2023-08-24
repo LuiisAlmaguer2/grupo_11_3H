@@ -30,29 +30,65 @@
                             <a href="/auth/register"><button class="upperbtn">Sign up</button></a>
                         </div>
 
+
                         <form action="/auth/register" method="POST" enctype="multipart/form-data">
 
-                            <p class="email info">Email Address</p>
-                            <input type="email" name="email" class="field" placeholder="Enter email address" required>
+                            <div>
+                                <p class="email info">Email Address</p>
+                                <input type="email" name="email" class="field" placeholder="Enter email address"
+                                    value="<%= locals.oldData ? oldData.email : null %>">
+                                <% if (locals.errors && errors.email) { %>
+                                    <p class="error">
+                                        <%= errors.email.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+
 
                             <p class="password info">Password</p>
-                            <input type="password" name="password" class="field" placeholder="Enter password" required>
+                            <div>
+                                <input type="password" name="password" class="field" placeholder="Enter password">
+                                <% if (locals.errors && errors.password) { %>
+                                    <p class="error">
+                                        <%= errors.password.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
 
-                            <p class="name info">First Name</p>
-                            <input type="text" name="nombre" class="field" placeholder="Enter first name" required>
+                            <div>
+                                <p class="name info">First Name</p>
+                                <input type="text" name="nombre" class="field" placeholder="Enter first name"
+                                    value="<%= locals.oldData ? oldData.nombre : null %>">
+                                <% if (locals.errors && errors.nombre) { %>
+                                    <p class="error">
+                                        <%= errors.nombre.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
 
-                            <p class="name info">Last Name</p>
-                            <input type="text" name="apellido" class="field" placeholder="Enter last name" required>
+                            <div>
+                                <p class="name info">Last Name</p>
+                                <input type="text" name="apellido" class="field" placeholder="Enter last name"
+                                    value="<%= locals.oldData ? oldData.apellido : null %>">
+                                <% if (locals.errors && errors.apellido) { %>
+                                    <p class="error">
+                                        <%= errors.apellido.msg %>
+                                    </p>
+                                    <% } %>
+                            </div>
+
 
 
                             <div class="check">
                                 <input type="checkbox" id="cbox2" value="second_checkbox">
-                                <label for="cbox2" id="label">Tick here if you want to get marketing emails from
+                                <label for="cbox2" id="label">Tick here if you want to get marketing
+                                    emails from
                                     Azport</label>
                             </div>
 
                             <div class="last-text">
-                                <p>Want to know more about how and why Azport uses your personal information? Read our
+                                <p>Want to know more about how and why Azport uses your personal
+                                    information? Read our
                                     Privacy Notice.</p>
                             </div>
 

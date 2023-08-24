@@ -133,6 +133,11 @@ p {
     padding: 0 30px;
 }
 
+.error {
+    color: red;
+    text-align: left;
+}
+
 .createButton {
     margin: 6px 0;
 }

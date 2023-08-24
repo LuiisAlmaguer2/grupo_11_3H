@@ -19,8 +19,19 @@
                     <input class="inputS" type="search" name="search" pattern=".*\S.*" required>
                 </form>
             </div>
-            <a href="/auth/login" class="iconNav"><i class="fa-regular fa-user navIcon"></i></a>
-            <a href="/products/cart" class="iconNav"><i class="fa-solid fa-bag-shopping navIcon"></i></a>
+
+
+            <% if (locals.userIsLog) { %>
+                <p>Hi, <%= locals.userLogged.nombre %>
+                </p>
+                <% } %>
+
+                    <a href="/auth/login" class="iconNav"><i class="fa-regular fa-user navIcon"></i></a>
+                    <a href="/products/cart" class="iconNav"><i class="fa-solid fa-bag-shopping navIcon"></i></a>
+
+                    <% if (locals.userIsLog) { %>
+                        <a href="/auth/logout">Logout</a>
+                        <% } %>
 
         </ul>
     </nav>

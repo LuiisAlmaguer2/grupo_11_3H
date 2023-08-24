@@ -31,7 +31,7 @@ const controller = {
             productosFilter = productos.filter(producto => producto.categoria === req.query.category);
         }
 
-        console.log(req.query)
+        //console.log(req.query)
 
         res.render("products", { productosFilter })
     },
