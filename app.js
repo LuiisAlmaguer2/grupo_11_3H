@@ -11,7 +11,7 @@ const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes")
 const adminRoutes = require("./routes/adminRoutes");
 const userLogged = require("./middlewares/userLoggedMiddleware");
-const userRegistered = require("./middlewares/authRegisterMiddleware");
+
 
 
 
@@ -27,6 +27,7 @@ app.use(cookies())
 
 //Middlewares
 app.use(userLogged);
+
 
 
 

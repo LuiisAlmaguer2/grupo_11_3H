@@ -29,8 +29,17 @@
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>Hi <%= user.nombre %>
-        </p>
+
+        <% if (user) { %>
+            <p>Hi <%= user.nombre %>
+            </p>
+            <% } %>
+
+                <div class="input-group">
+                    <input type="email" name="" id="email">
+                    <label for="email" class="input-group_label"></label>
+                </div>
+
 </body>
 
 </html>
