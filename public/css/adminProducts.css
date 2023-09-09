@@ -17,3 +17,12 @@ tr,
 td {
     border: 2px solid black;
 }
+
+.title {
+    text-align: center;
+}
+
+.btn-delete {
+    border: none;
+    background-color: white;
+}

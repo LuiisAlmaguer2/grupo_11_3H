@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/adminProducts.css" type="text/css" rel="stylesheet">
+    <link href="/css/createProduct.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -24,37 +24,44 @@
     <%- include("../partials/header"); %>
 
         <main>
-            <div>
+            <div class="title">
                 <h1>Crear nuevo producto</h1>
             </div>
 
-            <div>
+            <div class="form-Info">
                 <form action="/admin/create" method="POST" enctype="multipart/form-data">
-                    <div>
-                        <input type="text" name="nombre" placeholder="Coloca nombre del producto" required>
+                    <div class="inputInfo">
+                        <label for="nombre">Nombre del Producto</label>
+                        <input type="text" name="nombre" placeholder="Coloca nombre del producto" id="nombre" required>
                     </div>
-                    <div>
+                    <div class="inputInfo">
+                        <label for="">Descripcion del Producto</label>
                         <input type="text" name="descripcion" placeholder="Coloca la descripcion del producto" required>
                     </div>
-                    <div>
+                    <div class="inputInfo">
+                        <label for="">Imagen del producto</label>
                         <input type="file" name="imagen">
                     </div>
-                    <div>
+                    <div class="inputInfo">
+                        <label for="">Selecciona la categoria</label>
                         <select name="categoria">
                             <option value="Women">Women</option>
                             <option value="Men">Men</option>
+                            <option value="Accesories">Accesories</option>
                         </select>
                         <!-- <input type="text" name="categoria" placeholder="Coloca la categoria del producto"> -->
                     </div>
-                    <div>
+                    <div class="inputInfo">
+                        <label for="">Color del Producto</label>
                         <input type="text" name="color" placeholder="Coloca el color del producto">
                     </div>
-                    <div>
+                    <div class="inputInfo">
+                        <label for="">Precio del Producto</label>
                         <input type="text" name="precio" placeholder="Coloca el precio del producto">
                     </div>
                     <div>
                         <button type="submit">Guardar</button>
-                        <a href="/admin">Volver</a>
+                        <button><a href="/admin">Volver</a></button>
                     </div>
                 </form>
             </div>

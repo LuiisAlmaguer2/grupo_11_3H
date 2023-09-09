@@ -14,7 +14,7 @@ const userLogged = require("./middlewares/userLoggedMiddleware");
 
 
 
-
+app.use(express.static(path.resolve(__dirname, "./public")));
 
 //Middleware para express-session
 app.use(session({
@@ -28,11 +28,6 @@ app.use(cookies())
 //Middlewares
 app.use(userLogged);
 
-
-
-
-
-app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.set("view engine", "ejs");
 

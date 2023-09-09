@@ -1,10 +1,10 @@
 const path = require("path");
 const fs = require("fs");
-
+let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")))
 
 const controller = {
     index: (req, res) => {
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")))
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")))
 
         res.render("./admin/adminProducts", { productos });
     },
@@ -13,7 +13,7 @@ const controller = {
 
     },
     save: (req, res) => {
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
         let nuevoProducto;
 
         if (productos.length === 0) {
@@ -52,7 +52,7 @@ const controller = {
     },
 
     show: (req, res) => {
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
         let elProducto;
 
         productos.forEach(producto => {
@@ -66,7 +66,7 @@ const controller = {
     },
 
     edit: (req, res) => {
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
         let productoId = parseInt(req.params.id);
 
         let productoAEditar = productos.find(producto => producto.id === productoId);
@@ -76,10 +76,9 @@ const controller = {
 
     update: (req, res) => {
         let img;
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
         const id = parseInt(req.params.id)
         let productoEditado = productos.find(producto => producto.id === id);
-        //const imagen = req.file ? req.file.filename : req.body.oldImagen;
 
         if (req.file && req.file.filename) {
             img = req.file.filename
@@ -87,17 +86,6 @@ const controller = {
         } else {
             img = productoEditado.imagen;
         }
-
-        // if (req.body.oldImagen) {
-        //     console.log(req.body.oldImagen)
-        //     if ((req.body.imagen !== req.body.oldImagen) && (req.body.oldImagen !== "")) {
-        //         fs.unlinkSync(path.resolve(__dirname, "../public/img/" + productoEditado.oldImagen))
-        //     }
-
-        //     // if (req.body.imagen === req.body.oldImagen) {
-        //     //     req.body.oldImagen = ""
-        //     // }
-        // }
 
         let productoUpdate = productos.map(producto => {
             if (producto.id === id) {
@@ -123,7 +111,7 @@ const controller = {
 
     ,
     delete: (req, res) => {
-        let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
+        // let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")));
 
         let productoAEliminar = parseInt(req.params.id);
 

@@ -7,7 +7,7 @@ function userLogged(req, res, next) {
     let emailInCookie = req.cookies.userEmail;
     let userFromCookie = User.findByField('email', emailInCookie)
 
-    console.log("UserFromCookie: ", userFromCookie)
+    //console.log("UserFromCookie: ", userFromCookie)
 
     if (userFromCookie) {
         req.session.userLogged = userFromCookie
@@ -27,7 +27,7 @@ function userLogged(req, res, next) {
 
     //console.log(req.session.userLogged)
 
-    console.log("res.locals.userIsLog: ", res.locals.userIsLog)
+    // console.log("res.locals.userIsLog: ", res.locals.userIsLog)
 
 
 

@@ -28,29 +28,44 @@ const controller = {
             let usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/users.json")));
             let nuevoUsuario;
 
+            let emailExistente = User.findByField('email', req.body.email.toUpperCase());
 
-            if (usuarios.length === 0) {
-                nuevoUsuario = {
-                    id: 1,
-                    email: req.body.email,
-                    password: bcrypt.hashSync(req.body.password, 10),
-                    nombre: req.body.nombre,
-                    apellido: req.body.apellido,
-                }
+            if (emailExistente) {
+                return res.render('register', {
+                    errors: {
+                        email: {
+                            msg: 'El email ya esta registrado'
+                        }
+                    }
+                })
+
 
             } else {
-                let ultimoUsuario = usuarios.pop();
-                usuarios.push(ultimoUsuario);
 
-                nuevoUsuario = {
-                    id: ultimoUsuario.id + 1,
-                    email: req.body.email,
-                    password: bcrypt.hashSync(req.body.password, 10),
-                    nombre: req.body.nombre,
-                    apellido: req.body.apellido,
+                if (usuarios.length === 0) {
+                    nuevoUsuario = {
+                        id: 1,
+                        email: req.body.email.toUpperCase(),
+                        password: bcrypt.hashSync(req.body.password, 10),
+                        nombre: req.body.nombre,
+                        apellido: req.body.apellido,
+                    }
+
+                } else {
+                    let ultimoUsuario = usuarios.pop();
+                    usuarios.push(ultimoUsuario);
+
+                    nuevoUsuario = {
+                        id: ultimoUsuario.id + 1,
+                        email: req.body.email.toUpperCase(),
+                        password: bcrypt.hashSync(req.body.password, 10),
+                        nombre: req.body.nombre,
+                        apellido: req.body.apellido,
+                    }
+
                 }
-
             }
+
 
             usuarios.push(nuevoUsuario);
 
@@ -82,7 +97,7 @@ const controller = {
 
 
     loginProcess: (req, res) => {
-        let userToLogin = User.findByField('email', req.body.email);
+        let userToLogin = User.findByField('email', req.body.email.toUpperCase());
 
         if (userToLogin) {
             let correctPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
@@ -91,11 +106,11 @@ const controller = {
                 delete userToLogin.password;
                 setSession(req, res, req.body.logged, userToLogin)
 
-                // req.session.userLogged = userToLogin;
+                req.session.userLogged = userToLogin;
 
-                // if (req.body.logged) {
-                //     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-                // }
+                if (req.body.logged) {
+                    res.cookie('userEmail', req.body.email.toUpperCase(), { maxAge: (1000 * 60) * 60 })
+                }
                 res.redirect("/auth/perfil")
 
             } else {
@@ -112,7 +127,7 @@ const controller = {
             return res.render('login', {
                 errors: {
                     email: {
-                        msg: "Este email no se encuentra en nuestra BD" //cambiar mensaje por seguridad
+                        msg: "El correo o la contrasena no son correctos" //cambiar mensaje por seguridad
                     }
                 }
             })
