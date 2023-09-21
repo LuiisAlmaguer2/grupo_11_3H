@@ -8,9 +8,9 @@
                 <a href="/"><img src="/img/logo.png" class="imgLogo"></a>
             </div>
             <div class="itemsNav">
-                <li><a href="/products?category=Women"><strong> WOMEN </strong></a></li>
-                <li><a href="/products?category=Men"><strong>MEN </strong></a></li>
-                <li><a href="/products?category=Accesories"><strong>ACCESORIES </strong></a></li>
+                <li><a href="/products?category=1"><strong> MUJER </strong></a></li>
+                <li><a href="/products?category=2"><strong>HOMBRE </strong></a></li>
+                <li><a href="/products?category=3"><strong>ACCESORIO </strong></a></li>
             </div>
             <div class="searchBar">
                 <form class="formN" action="/searchPage">
@@ -22,11 +22,11 @@
 
 
             <% if (locals.userIsLog) { %>
-                <p>Hi, <%= locals.userLogged.nombre %>
+                <p>Hi, <%= locals.userLogged.name %>
                 </p>
                 <% } %>
 
-                    <% if (locals.userIsLog && userLogged.rol==="administrador" ) { %>
+                    <% if (locals.userIsLog && userLogged.role_id===1 ) { %>
                         <a href="/admin">Administrar</a>
                         <% } %>
 

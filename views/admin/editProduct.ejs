@@ -28,45 +28,55 @@
             </div>
 
             <div class="form-Info">
-                <form action="/admin/edit/<%=productoAEditar.id%>?_method=PUT" method="POST"
-                    enctype="multipart/form-data">
+                <form action="/admin/edit/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div class="inputInfo">
                         <label for="">Nombre del Producto</label>
                         <input type="text" name="nombre" placeholder="Coloca nombre del producto" required
-                            value="<%=productoAEditar.nombre %>">
+                            value="<%=producto.name %>">
                     </div>
                     <div class="inputInfo">
                         <label for="">Descripcion del Producto</label>
                         <input type="text" name="descripcion" placeholder="Coloca la descripcion del producto"
-                            value="<%=productoAEditar.descripcion %>">
+                            value="<%=producto.description %>">
                     </div>
                     <div class="inputInfo">
                         <label for="">Imagen del producto</label>
-                        <img src="/img/<%=productoAEditar.imagen %>" alt="">
-                        <!-- <input type="hidden" name="oldImagen" value="<%=productoAEditar.imagen %>"> -->
+                        <img src="/img/<%=producto.image %>" alt="">
+                        <!-- <input type="hidden" name="oldImagen" value="<%=producto.imagen %>"> -->
                         <input type="file" name="imagen">
                     </div>
                     <div class="inputInfo">
                         <label for="">Selecciona la categoria</label>
                         <select name="categoria">
-                            <option value="Women" <%=productoAEditar.categoria==="Women" ? "selected" : null %>>Women
-                            </option>
-                            <option value="Men" <%=productoAEditar.categoria==="Men" ? "selected" : null %>>Men</option>
-                            <option value="Men" <%=productoAEditar.categoria==="Accesories" ? "selected" : null %>
-                                >Accesories
-                            </option>
+                            <!-- <option value="Mujer" <%=categoria.name==="Mujer" ? "selected" : null %>>Mujer
+                    </option>
+                    <option value="Hombre" <%=categoria.name==="Hombre" ? "selected" : null %>>Hombre</option>
+                    <option value="Accesorio" <%=categoria.name==="Accesorio" ? "selected" : null %>
+                        >Accesorio
+                    </option> -->
+                            <% for( let i=0; i < categoria.length; i++ ) { %>
+                                <% if (categoria[i].id===producto.category_id) { %>
+                                    <option value="<%= categoria[i].id %>">
+                                        <%= categoria[i].name %>
+                                    </option>
+                                    <% } else {%>
+                                        <option value="<%= categoria[i].id %>">
+                                            <%= categoria[i].name %>
+                                        </option>
+                                        <% }%>
+                                            <% } %>
                         </select>
                         <!-- <input type="text" name="categoria" placeholder="Coloca la categoria del producto"> -->
                     </div>
                     <div class="inputInfo">
                         <label for="">Color del Producto</label>
                         <input type="text" name="color" placeholder="Coloca el color del producto"
-                            value="<%=productoAEditar.color %>">
+                            value="<%=producto.color %>">
                     </div>
                     <div class="inputInfo">
                         <label for="">Precio del Producto</label>
                         <input type="text" name="precio" placeholder="Coloca el precio del producto"
-                            value="<%=productoAEditar.precio %>">
+                            value="<%=producto.price %>">
                     </div>
                     <div>
                         <button type="submit">Actualizar</button>

@@ -11,6 +11,8 @@ const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes")
 const adminRoutes = require("./routes/adminRoutes");
 const userLogged = require("./middlewares/userLoggedMiddleware");
+const db = require("./database/models");
+const { Console } = require("console");
 
 
 
@@ -28,6 +30,33 @@ app.use(cookies())
 //Middlewares
 app.use(userLogged);
 
+
+// db.User.findByPk(5, {
+//     include: db.Role,
+//     raw: true
+// })
+//     .then((pelicula) => console.log(pelicula));
+
+// db.Role.findByPk(1, {
+//     include: db.User,
+//     raw: true
+// })
+//     .then((rol) => console.log(rol))
+
+// db.Product.findAll()
+//     .then((producto) => console.log(producto))
+
+// db.Category.findByPk(1, {
+//     include: db.Product,
+//     raw: true
+// })
+// .then((categoria) => console.log(categoria))
+
+// db.Product.findByPk(1, {
+//     include: db.Category,
+//     raw: true
+// })
+//     .then((categoria) => console.log(categoria))
 
 app.set("view engine", "ejs");
 

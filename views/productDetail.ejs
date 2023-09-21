@@ -25,7 +25,7 @@
 
                 <article class="gallery">
                     <div class="gallery__image-container">
-                        <img class="gallery__main-image" src="/img/<%=elProducto.imagen%>" alt="Imagen principal">
+                        <img class="gallery__main-image" src="/img/<%=producto.image%>" alt="Imagen principal">
                     </div>
                     <div class="gallery__thumnails">
                         <img id="1" class="gallery__thumnail" src="/img/doncic-dallas-espalda.jpeg" alt="thumnail">
@@ -40,15 +40,15 @@
                 <article class="details">
 
                     <h2 class="details__titulo">
-                        <%=elProducto.nombre%>
+                        <%=producto.name%>
                     </h2>
                     <p class="colorInfo">
-                        <%= elProducto.color %>
+                        <%= producto.color %>
                     </p>
-                    <p class="">Azport <%= elProducto.categoria %>
+                    <p class="">Azport <%= producto.Category.name %>
                     </p>
                     <div class="details__prices">
-                        <p class="details__now">$<%= elProducto.precio %><span class="details__discount">50%</span></p>
+                        <p class="details__now">$<%= producto.price %><span class="details__discount">50%</span></p>
                         <p class="details__before">$56.00</p>
                     </div>
 

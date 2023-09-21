@@ -29,21 +29,21 @@
         <div class="cards">
 
 
-            <% for(let i=0 ; i < productosFilter.length; i++) { %>
+            <% for(let i=0 ; i < productos.length; i++) { %>
 
                 <article>
                     <div class="card">
-                        <a href="/products/detail/<%=productosFilter[i].id%>">
-                            <img src="/img/<%= productosFilter[i].imagen %>" alt="TopRosa" class="imgCard">
+                        <a href="/products/detail/<%=productos[i].id%>">
+                            <img src="/img/<%= productos[i].image %>" alt="TopRosa" class="imgCard">
                             <div>
                                 <p class="descripcionCard"><b>
-                                        <%= productosFilter[i].nombre %>
+                                        <%= productos[i].name %>
                                     </b></p>
                                 <p class="colorItem">
-                                    <%= productosFilter[i].color %>
+                                    <%= productos[i].color %>
                                 </p>
                                 <p class="priceItem">
-                                    $<%= productosFilter[i].precio %>
+                                    $<%= productos[i].price %>
                                 </p>
                             </div>
 

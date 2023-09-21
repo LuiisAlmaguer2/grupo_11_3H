@@ -45,9 +45,14 @@
                     <div class="inputInfo">
                         <label for="">Selecciona la categoria</label>
                         <select name="categoria">
-                            <option value="Women">Women</option>
+                            <!-- <option value="Women">Women</option>
                             <option value="Men">Men</option>
-                            <option value="Accesories">Accesories</option>
+                            <option value="Accesories">Accesories</option> -->
+                            <% for( let i=0; i < categories.length; i++ ) { %>
+                                <option value="<%= categories[i].id %>">
+                                    <%= categories[i].name %>
+                                </option>
+                                <% } %>
                         </select>
                         <!-- <input type="text" name="categoria" placeholder="Coloca la categoria del producto"> -->
                     </div>

@@ -1,24 +1,5 @@
 [
   {
-    "id": 1,
-    "nombre": "Seamless Training Top",
-    "descripcion": "Top color rosa",
-    "imagen": "product-1691025921143.jpg",
-    "categoria": "Women",
-    "color": "Pink",
-    "precio": "45"
-  },
-  {
-    "nombre": "Seamless Training Crop Top",
-    "descripcion": "Crop Top Azul",
-    "oldImagen": "",
-    "categoria": "Women",
-    "color": "LightBlue",
-    "precio": "25",
-    "id": 2,
-    "imagen": "product-1690943862661.jpg"
-  },
-  {
     "nombre": "Seamless Vital 2.0 Legging",
     "descripcion": "Legging Negro",
     "oldImagen": "product-1690404135442.jpg",

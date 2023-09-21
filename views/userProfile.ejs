@@ -31,8 +31,8 @@
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <% if (user) { %>
-            <p>Hi <%= user.nombre %>
+        <% if (locals.userIsLog) { %>
+            <p>Hi <%= locals.userLogged.name %>
             </p>
             <% } %>
 
