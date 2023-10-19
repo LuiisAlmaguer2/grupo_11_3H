@@ -11,9 +11,12 @@ const { body } = require("express-validator")
 const validations = [
     body('email').notEmpty().withMessage("Tienes que escribir un correo electronico").bail()
         .isEmail().withMessage("Tienes que escribir un formato de correo valido"),
-    body('password').notEmpty().withMessage("Tienes que escribir tu contrasena"),
-    body('nombre').notEmpty().withMessage("Tienes que escribir tu nombre"),
-    body('apellido').notEmpty().withMessage("Tienes que escribir tu apellido"),
+    body('password').notEmpty().withMessage("Tienes que escribir tu contraseña").bail()
+        .isLength({ min: 8 }).withMessage("Debe de contener mas de 8 caracteres"),
+    body('nombre').notEmpty().withMessage("Tienes que escribir tu nombre").bail()
+        .isLength({ min: 2 }).withMessage("Debe de contener mas de 2 caracteres"),
+    body('apellido').notEmpty().withMessage("Tienes que escribir tu apellido").bail()
+        .isLength({ min: 2 }).withMessage("Debe de contener mas de 2 caracteres"),
 ]
 const guestMiddleware = require("../middlewares/guestMiddleware")
 const authMiddleware = require("../middlewares/authMiddleware")

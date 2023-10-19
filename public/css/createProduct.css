@@ -25,3 +25,10 @@ main {
 .inputInfo label {
     text-align: left;
 }
+
+.error {
+    color: red;
+    text-align: left;
+    margin: 0px;
+    font-size: 14px;
+}

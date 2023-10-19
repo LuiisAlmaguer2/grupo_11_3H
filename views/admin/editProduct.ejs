@@ -48,12 +48,6 @@
                     <div class="inputInfo">
                         <label for="">Selecciona la categoria</label>
                         <select name="categoria">
-                            <!-- <option value="Mujer" <%=categoria.name==="Mujer" ? "selected" : null %>>Mujer
-                    </option>
-                    <option value="Hombre" <%=categoria.name==="Hombre" ? "selected" : null %>>Hombre</option>
-                    <option value="Accesorio" <%=categoria.name==="Accesorio" ? "selected" : null %>
-                        >Accesorio
-                    </option> -->
                             <% for( let i=0; i < categoria.length; i++ ) { %>
                                 <% if (categoria[i].id===producto.category_id) { %>
                                     <option value="<%= categoria[i].id %>">
@@ -66,7 +60,7 @@
                                         <% }%>
                                             <% } %>
                         </select>
-                        <!-- <input type="text" name="categoria" placeholder="Coloca la categoria del producto"> -->
+
                     </div>
                     <div class="inputInfo">
                         <label for="">Color del Producto</label>

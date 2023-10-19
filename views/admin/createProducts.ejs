@@ -29,25 +29,42 @@
             </div>
 
             <div class="form-Info">
-                <form action="/admin/create" method="POST" enctype="multipart/form-data">
+                <form action="/admin/create" method="POST" enctype="multipart/form-data" id="form-Product">
                     <div class="inputInfo">
                         <label for="nombre">Nombre del Producto</label>
-                        <input type="text" name="nombre" placeholder="Coloca nombre del producto" id="nombre" required>
+                        <input type="text" name="nombre" placeholder="Coloca nombre del producto" id="nombre"
+                            value="<%= locals.oldData ? oldData.nombre : null %>">
+                        <% if (locals.errors && errors.nombre) { %>
+                            <p class="error">
+                                <%= errors.nombre.msg %>
+                            </p>
+                            <% } %>
+                                <span class="error" id="error-nombre"></span>
                     </div>
                     <div class="inputInfo">
                         <label for="">Descripcion del Producto</label>
-                        <input type="text" name="descripcion" placeholder="Coloca la descripcion del producto" required>
+                        <input type="text" name="descripcion" placeholder="Coloca la descripcion del producto"
+                            id="descripcion" value="<%= locals.oldData ? oldData.descripcion : null %>">
+                        <% if (locals.errors && errors.descripcion) { %>
+                            <p class="error">
+                                <%= errors.descripcion.msg %>
+                            </p>
+                            <% } %>
+                                <span class="error" id="error-descripcion"></span>
                     </div>
                     <div class="inputInfo">
                         <label for="">Imagen del producto</label>
-                        <input type="file" name="imagen">
+                        <input type="file" name="imagen" id="imagen">
+                        <% if (locals.errors && errors.imagen) { %>
+                            <p class="error">
+                                <%= errors.imagen.msg %>
+                            </p>
+                            <% } %>
                     </div>
                     <div class="inputInfo">
                         <label for="">Selecciona la categoria</label>
                         <select name="categoria">
-                            <!-- <option value="Women">Women</option>
-                            <option value="Men">Men</option>
-                            <option value="Accesories">Accesories</option> -->
+
                             <% for( let i=0; i < categories.length; i++ ) { %>
                                 <option value="<%= categories[i].id %>">
                                     <%= categories[i].name %>
@@ -72,7 +89,7 @@
             </div>
         </main>
 
-
+        <script src="/js/validationProduct.js"></script>
 </body>
 
 </html>

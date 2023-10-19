@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/editProduct.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Inter:wght@300&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>User Edit</title>
+</head>
+
+<body>
+    <%- include("../partials/header"); %>
+        <main>
+
+            <div class="title">
+                <h1>Edicion del usuario</h1>
+            </div>
+
+            <div class="form-Info">
+                <form action="/adminUsers/edit/<%=usuario.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div class="inputInfo">
+                        <label for="">Nombre del Usuario</label>
+                        <input type="text" name="nombre" placeholder="Coloca nombre del producto"
+                            value="<%=usuario.name %>" readonly>
+                    </div>
+                    <div class="inputInfo">
+                        <label for="">Apellido del Usuario</label>
+                        <input type="text" name="apellido" placeholder="Coloca la descripcion del producto"
+                            value="<%=usuario.last_name %>" readonly>
+                    </div>
+
+                    <div class="inputInfo">
+                        <label for="">Selecciona el rol</label>
+
+                        <select name="role">
+
+                            <% for( let i=0; i < rol.length; i++ ) { %>
+                                <% if (rol[i].id===usuario.RoleId) { %>
+                                    <option value="<%= rol[i].id %>" selected>
+                                        <%= rol[i].name%>
+                                    </option>
+                                    <!-- <% } else {%>
+                                        <option value="<%= rol[i].id %>">
+                                            <%= rol[i].name%>
+                                        </option>
+                                        <% }%> -->
+                                    <% } %>
+                        </select>
+
+                    </div>
+                    <div class="inputInfo">
+                        <label for="">Email</label>
+                        <input type="text" name="email" placeholder="Coloca el precio del producto"
+                            value="<%=usuario.email %>" readonly>
+                    </div>
+                    <div>
+                        <button type="submit">Actualizar</button>
+                        <a href="/adminUsers">Volver</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+
+
+</body>

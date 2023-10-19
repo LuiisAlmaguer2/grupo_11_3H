@@ -10,6 +10,7 @@ const mainRoutes = require("./routes/mainRoutes");
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes")
 const adminRoutes = require("./routes/adminRoutes");
+const adminUserRoutes = require("./routes/adminUserRoutes")
 const userLogged = require("./middlewares/userLoggedMiddleware");
 const db = require("./database/models");
 const { Console } = require("console");
@@ -67,6 +68,7 @@ app.use("/", mainRoutes);
 app.use("/auth", authRoutes);
 app.use("/products", productRoutes);
 app.use("/admin", adminRoutes);
+app.use("/adminUsers", adminUserRoutes);
 
 app.listen(PORT, () => console.log("Escuchando en http://localhost:" + PORT))
 

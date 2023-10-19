@@ -27,7 +27,27 @@
                 <% } %>
 
                     <% if (locals.userIsLog && userLogged.role_id===1 ) { %>
-                        <a href="/admin">Administrar</a>
+
+
+
+                        <!-- <li class="administrar">Administrar</li>
+                        <div class="sub-menu">
+                            <ul class="dropdown">
+                                <li><a class="admin" href="/admin">Administrar Productos</a></li>
+                                <li><a class="admin" href="/adminUsers">Administrar Usuarios</a></li>
+                            </ul>
+                        </div> -->
+
+                        <div class="dropdown">
+                            <p class="drop">Administrar</p>
+                            <div class="dropdown-content">
+                                <a href="/admin">Productos</a>
+                                <a href="/adminUsers">Usuarios</a>
+                            </div>
+                        </div>
+
+
+
                         <% } %>
 
 
