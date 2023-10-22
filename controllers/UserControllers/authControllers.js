@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require('express-validator');
-const db = require("../database/models")
+const db = require("../../database/models")
 
 const controller = {
     login: (req, res) => {

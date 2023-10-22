@@ -6,11 +6,12 @@ const session = require("express-session")
 const cookies = require("cookie-parser")
 const PORT = 3030;
 
-const mainRoutes = require("./routes/mainRoutes");
-const authRoutes = require("./routes/authRoutes");
-const productRoutes = require("./routes/productRoutes")
-const adminRoutes = require("./routes/adminRoutes");
-const adminUserRoutes = require("./routes/adminUserRoutes")
+const mainRoutes = require("./routes/ProductRoutes/mainRoutes");
+const authRoutes = require("./routes/UserRoutes/authRoutes");
+const productRoutes = require("./routes/ProductRoutes/productRoutes")
+const adminRoutes = require("./routes/ProductRoutes/adminRoutes");
+const adminUserRoutes = require("./routes/UserRoutes/adminUserRoutes")
+const apiRoutes = require("./routes/ApiRoutes/api")
 const userLogged = require("./middlewares/userLoggedMiddleware");
 const db = require("./database/models");
 const { Console } = require("console");
@@ -69,6 +70,7 @@ app.use("/auth", authRoutes);
 app.use("/products", productRoutes);
 app.use("/admin", adminRoutes);
 app.use("/adminUsers", adminUserRoutes);
+app.use("/api", apiRoutes)
 
 app.listen(PORT, () => console.log("Escuchando en http://localhost:" + PORT))
 

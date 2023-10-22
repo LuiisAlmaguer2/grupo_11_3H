@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const authController = require("../controllers/authControllers");
+const authController = require("../../controllers/UserControllers/authControllers");
 const multer = require("multer");
 
 const upload = multer();
@@ -18,8 +18,8 @@ const validations = [
     body('apellido').notEmpty().withMessage("Tienes que escribir tu apellido").bail()
         .isLength({ min: 2 }).withMessage("Debe de contener mas de 2 caracteres"),
 ]
-const guestMiddleware = require("../middlewares/guestMiddleware")
-const authMiddleware = require("../middlewares/authMiddleware")
+const guestMiddleware = require("../../middlewares/guestMiddleware")
+const authMiddleware = require("../../middlewares/authMiddleware")
 
 
 

@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const path = require("path");
-const controllersAdmin = require(path.resolve(__dirname, "../controllers/adminControllers"));
+const controllersAdmin = require(path.resolve(__dirname, "../../controllers/ProductControllers/adminControllers"));
 const multer = require("multer");
-const adminMiddleware = require("../middlewares/adminMiddleware");
+const adminMiddleware = require("../../middlewares/adminMiddleware");
 const { body } = require("express-validator")
 
 const storage = multer.diskStorage({

@@ -1,9 +1,9 @@
 const express = require("express")
 const router = express.Router()
 const path = require("path")
-const adminUserController = require(path.resolve(__dirname, "../controllers/adminUserControllers"))
+const adminUserController = require(path.resolve(__dirname, "../../controllers/UserControllers/adminUserControllers"))
 const multer = require("multer")
-const adminMiddleware = require("../middlewares/adminMiddleware");
+const adminMiddleware = require("../../middlewares/adminMiddleware");
 
 const upload = multer()
 
