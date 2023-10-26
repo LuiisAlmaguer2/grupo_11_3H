@@ -31,16 +31,19 @@
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <% if (locals.userIsLog) { %>
-            <p>Hi <%= locals.userLogged.name %>
-            </p>
-            <% } %>
-
-                <div class="input-group">
-                    <input type="email" name="" id="email">
-                    <label for="email" class="input-group_label"></label>
+        <div class="divP">
+            <div class="userP">
+                <div>
+                    <img class="logoP" src="/img/logo.png" type="image/icon" rel="icon">
                 </div>
-
+                <% if (locals.userIsLog) { %>
+                    <h1>¡Hi <%= locals.userLogged.name %>!
+                    </h1>
+                    <h3> Nos agrada verte de nuevo! </h3>
+                    <button><b> HOME </b></button>
+                    <% } %>
+            </div>
+        </div>
 </body>
 
 </html>
