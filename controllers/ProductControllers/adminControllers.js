@@ -27,6 +27,7 @@ const controller = {
         if (resultValidation.errors.length > 0) {
             db.Category.findAll()
                 .then((categories) => {
+                    console.log(resultValidation.errors)
                     res.render("./admin/createProducts", { categories, errors: resultValidation.mapped(), oldData: req.body })
                 })
         } else {
@@ -88,7 +89,7 @@ const controller = {
                 })
                     .then(() => {
                         if (req.file?.filename) {
-                            fs.unlinkSync(path.resolve(__dirname, "../public/img/" + productoEditado.image))
+                            fs.unlinkSync(path.resolve(__dirname, "../../public/img/" + productoEditado.image))
                         }
                         res.redirect("/admin")
                     })
@@ -104,7 +105,7 @@ const controller = {
             where: { id: req.params.id }
         })
             .then((producto) => {
-                fs.unlinkSync(path.resolve(__dirname, "../public/img/" + producto.image))
+                fs.unlinkSync(path.resolve(__dirname, "../../public/img/" + producto.image))
 
                 db.Product.destroy({
                     where: { id: req.params.id }

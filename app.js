@@ -18,6 +18,7 @@ const { Console } = require("console");
 
 
 
+
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 //Middleware para express-session
@@ -64,6 +65,7 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
+
 
 app.use("/", mainRoutes);
 app.use("/auth", authRoutes);

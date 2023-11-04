@@ -3,6 +3,7 @@
         <ul class="navbarHome">
             <div>
                 <i class="fa-solid fa-bars"></i>
+                <!-- <input type="checkbox" name="menu_hamburguesa" id="menu_hamburguesa"> -->
             </div>
             <div class="logoNav">
                 <a href="/"><img src="/img/logo.png" class="imgLogo"></a>
@@ -22,7 +23,7 @@
 
 
             <% if (locals.userIsLog) { %>
-                <p>Hi, <%= locals.userLogged.name %>
+                <p id="salutation">Hi, <%= locals.userLogged.name %>
                 </p>
                 <% } %>
 
@@ -38,7 +39,7 @@
                             </ul>
                         </div> -->
 
-                        <div class="dropdown">
+                        <div class="dropdown" id="collapsable">
                             <p class="drop">Administrar</p>
                             <div class="dropdown-content">
                                 <a href="/admin">Productos</a>
@@ -56,7 +57,7 @@
                                     class="fa-solid fa-bag-shopping navIcon"></i></a>
 
                             <% if (locals.userIsLog) { %>
-                                <a href="/auth/logout">Logout</a>
+                                <a href="/auth/logout" id="logout">Logout</a>
                                 <% } %>
 
 
