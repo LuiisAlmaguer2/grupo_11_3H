@@ -2,7 +2,7 @@
     <nav class="nav">
         <ul class="navbarHome">
             <div>
-              
+
                 <!-- <input type="checkbox" name="menu_hamburguesa" id="menu_hamburguesa"> -->
             </div>
             <div class="logoNav">
@@ -13,6 +13,12 @@
                     <i id="hb" class="fa-solid fa-bars"></i></label>
                 <input class="iconoMenu" type="checkbox" name="" id="iconoMenu">
                 <div class="menuResponsive">
+                    <li>
+                        <% if (locals.userIsLog) { %>
+                            <p>Hi, <%= locals.userLogged.name %>
+                            </p>
+                            <% } %>
+                    </li>
                     <div class="searchResponsive">
                         <form class="formResponsive" action="/searchPage">
                             <button class="btnN" type="submit"><i class="fas fa-search"></i>
@@ -23,6 +29,11 @@
                     <li><a href="/products?category=1"><strong>MUJER </strong></a></li>
                     <li><a href="/products?category=2"><strong>HOMBRE </strong></a></li>
                     <li><a href="/products?category=3"><strong>ACCESORIO </strong></a></li>
+                    <li>
+                        <% if (locals.userIsLog) { %>
+                            <a href="/auth/logout">Logout</a>
+                            <% } %>
+                    </li>
                 </div>
             </div>
             <div class="itemsNav">

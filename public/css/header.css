@@ -35,9 +35,9 @@
     position: absolute;
     inset: 0;
     top: 46.9px;
-    height: 25vh;
-    width: 100%;
-    left: -20px;
+    height: 45vh;
+    width: 45vh;
+    left: -40px;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -62,13 +62,14 @@
     width: 100%;
 }
 
-.searchResponsive + .inputResponsive{
+.searchResponsive+.inputResponsive {
     width: 100%;
 }
 
-.formResponsive{
+.formResponsive {
     display: flex;
 }
+
 .formN input {
     display: none;
 }
@@ -165,7 +166,7 @@ a {
 }
 
 #salutation {
-    display: none;
+    display: block;
 }
 
 #collapsable {
@@ -173,7 +174,7 @@ a {
 }
 
 #logout {
-    display: none;
+    display: block;
 }
 
 
@@ -189,25 +190,36 @@ a {
     .formN input {
         display: none;
     }
+
     .logoNav {
         left: 45%;
     }
 
 }
-@media (max-width:1021px){
-    .searchBar{
-       opacity: 0;
+
+@media (max-width:1021px) {
+    .searchBar {
+        opacity: 0;
+    }
+
+    #salutation {
+        display: none;
+    }
+
+    #logout {
+        display: none;
     }
 }
 
 
 @media (max-width: 514px) {
-    .menuResponsive{
-        height: 23vh;
-        width: 24vh;
+    .menuResponsive {
+        height: 45vh;
+        width: 45vh;
     }
-    
+
 }
+
 @media (min-width: 1021px) {
 
     i.fa-bars {
@@ -236,6 +248,8 @@ a {
     .divResponsive {
         display: none;
     }
+
+
 
     .formN {
         display: flex;
