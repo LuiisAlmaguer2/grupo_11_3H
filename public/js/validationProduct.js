@@ -41,8 +41,3 @@ descripcion.addEventListener("blur", (e) => {
 
 
 
-formularioProducto.addEventListener("submit", (e) => {
-    if (Object.entries.length > 0) {
-        e.preventDefault()
-    }
-})

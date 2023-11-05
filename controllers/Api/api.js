@@ -3,9 +3,35 @@ const { validationResult } = require("express-validator")
 
 const controller = {
     indexProducts: (req, res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            include: db.Category
+        })
             .then((productos) => {
-                return res.json(productos)
+
+                let mujer = 0
+                let hombre = 0
+                let accesorios = 0
+                for (let index = 0; index < productos.length; index++) {
+                    if (productos[index].category_id == 1) {
+                        mujer++
+                    } else if (productos[index].category_id == 2) {
+                        hombre++
+                    } else if (productos[index].category_id == 3) {
+                        accesorios++
+                    }
+
+                }
+
+                const respuesta = {
+                    count: productos.length,
+                    countByCategory: {
+                        Mujer: mujer,
+                        Hombre: hombre,
+                        Accesorios: accesorios
+                    },
+                    products: productos
+                }
+                return res.json(respuesta)
             })
     },
 
@@ -20,10 +46,16 @@ const controller = {
     },
 
     indexUsers: (req, res) => {
-        db.User.findAll()
-            .then((usuarios) =>
-                res.json(usuarios)
-            )
+        db.User.findAll({ attributes: ["id", "name", "last_name", "email"] })
+            .then((usuarios) => {
+
+                const respuesta = {
+                    count: usuarios.length,
+                    data: usuarios
+                }
+
+                return res.json(respuesta)
+            })
 
     },
 
