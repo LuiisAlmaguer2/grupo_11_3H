@@ -1,14 +1,28 @@
 <header>
     <nav class="nav">
         <ul class="navbarHome">
-            <div>
-                <i class="fa-solid fa-bars"></i>
-            </div>
             <div class="logoNav">
                 <a href="/"><img src="/img/logo.png" class="imgLogo"></a>
             </div>
+            <div class="divResponsive">
+                <label for="iconoMenu">
+                    <i id="hb" class="fa-solid fa-bars"></i></label>
+                <input class="iconoMenu" type="checkbox" name="" id="iconoMenu">
+                <div class="menuResponsive">
+                    <div class="searchResponsive">
+                        <form class="formResponsive" action="/searchPage">
+                            <button class="btnN" type="submit"><i class="fas fa-search"></i>
+                            </button>
+                            <input class="inputResponsive" type="search" name="search" pattern=".*\S.*" required>
+                        </form>
+                    </div>
+                    <li><a href="/products?category=1"><strong>MUJER </strong></a></li>
+                    <li><a href="/products?category=2"><strong>HOMBRE </strong></a></li>
+                    <li><a href="/products?category=3"><strong>ACCESORIO </strong></a></li>
+                </div>
+            </div>
             <div class="itemsNav">
-                <li><a href="/products?category=1"><strong> MUJER </strong></a></li>
+                <li><a href="/products?category=1"><strong>MUJER </strong></a></li>
                 <li><a href="/products?category=2"><strong>HOMBRE </strong></a></li>
                 <li><a href="/products?category=3"><strong>ACCESORIO </strong></a></li>
             </div>
@@ -27,9 +41,6 @@
                 <% } %>
 
                     <% if (locals.userIsLog && userLogged.role_id===1 ) { %>
-
-
-
                         <!-- <li class="administrar">Administrar</li>
                         <div class="sub-menu">
                             <ul class="dropdown">
@@ -37,7 +48,6 @@
                                 <li><a class="admin" href="/adminUsers">Administrar Usuarios</a></li>
                             </ul>
                         </div> -->
-
                         <div class="dropdown">
                             <p class="drop">Administrar</p>
                             <div class="dropdown-content">
@@ -45,12 +55,7 @@
                                 <a href="/adminUsers">Usuarios</a>
                             </div>
                         </div>
-
-
-
                         <% } %>
-
-
                             <a href="/auth/login" class="iconNav"><i class="fa-regular fa-user navIcon"></i></a>
                             <a href="/products/cart" class="iconNav"><i
                                     class="fa-solid fa-bag-shopping navIcon"></i></a>
@@ -58,9 +63,7 @@
                             <% if (locals.userIsLog) { %>
                                 <a href="/auth/logout">Logout</a>
                                 <% } %>
-
-
-
         </ul>
+
     </nav>
 </header>

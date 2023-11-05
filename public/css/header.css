@@ -25,14 +25,56 @@
     display: none;
 }
 
+.divResponsive {
+    position: relative;
+    width: 100%;
+
+}
+
+.menuResponsive {
+    position: absolute;
+    inset: 0;
+    top: 46.9px;
+    height: 25vh;
+    width: 100%;
+    left: -20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 15px;
+    background-color: white;
+    transition: all 0.15s ease-out;
+}
+
+.iconoMenu {
+    display: none;
+}
+
+.iconoMenu:checked+.menuResponsive {
+    display: flex;
+
+}
+
 .searchBar {
     display: flex;
     gap: 5px;
     width: 100%;
 }
 
+.searchResponsive + .inputResponsive{
+    width: 100%;
+}
+
+.formResponsive{
+    display: flex;
+}
 .formN input {
     display: none;
+}
+
+.menu-toggle {
+    animation: none;
 }
 
 .inputS {
@@ -135,14 +177,26 @@ a {
     .formN input {
         display: none;
     }
-
-
     .logoNav {
         left: 45%;
     }
+
+}
+@media (max-width:1021px){
+    .searchBar{
+       opacity: 0;
+    }
 }
 
-@media (min-width: 1023px) {
+
+@media (max-width: 514px) {
+    .menuResponsive{
+        height: 23vh;
+        width: 24vh;
+    }
+    
+}
+@media (min-width: 1021px) {
 
     i.fa-bars {
         display: none;
@@ -167,6 +221,10 @@ a {
         justify-content: end;
     }
 
+    .divResponsive {
+        display: none;
+    }
+
     .formN {
         display: flex;
         gap: 2px;
@@ -176,3 +234,7 @@ a {
     .formN input {
         display: block;
     }
+
+}
+
+;
