@@ -200,7 +200,6 @@ a {
     }
 }
 
-<<<<<<< HEAD
 
 @media (max-width: 514px) {
     .menuResponsive{
@@ -210,23 +209,6 @@ a {
     
 }
 @media (min-width: 1021px) {
-=======
-@media (min-width: 720px) {
-    #collapsable {
-        display: block;
-    }
-
-    #salutation {
-        display: block;
-    }
-
-    #logout {
-        display: block;
-    }
-}
-
-@media (min-width: 1023px) {
->>>>>>> 64514fda86928e12282ee4b5059c85a02e4863db
 
     i.fa-bars {
         display: none;
